@@ -1,0 +1,30 @@
+<app-nav-bar-admin></app-nav-bar-admin>
+
+<div class="mx-auto container py-4">
+  <h2 class="display-5 text-center">Cadastro de Itens de Consumo</h2>
+</div>
+
+<div class="container py-4 col-6">
+  <div class="form-group">
+    <label class="">Nome</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o nome do item">
+  </div>
+  <div class="form-group">
+    <label class="">Preço</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o valor de custo do item">
+  </div>
+  <div class="form-row text-center justify-content-center">
+    <div class="col">
+      <button type="button" routerLink="/home/cadastrar-itens-de-consumo/listar-itens-de-consumo" class="btn btn-primary text-center">
+        <i class="far fa-list-alt"></i>
+        Itens cadastrados
+      </button>
+    </div>
+    <div class="col">
+      <button type="button" routerLink="/home" class="btn btn-primary text-center">
+        <i class="fas fa-plus"></i>
+        Cadastrar item
+      </button>
+    </div>
+  </div>
+</div>
