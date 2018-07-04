@@ -1,0 +1,205 @@
+<app-nav-bar-client></app-nav-bar-client>
+
+<div class="mx-auto container py-4">
+  <h2 class="display-5 text-center">Planos</h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <legend>Selecione um de nossos planos</legend>
+      <div class="form-group">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Mês</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Data do vencimento</th>
+                <th scope="col">Situação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <th scope="row">Abril</th>
+                <td>R$ 1300,00</td>
+                <td>02/10/2018</td>
+                <td>Quitado</td>
+              </tr>
+              <tr class="">
+                <th scope="row">Abril</th>
+                <td>R$ 1300,00</td>
+                <td>02/10/2018</td>
+                <td>Quitado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio3">Disabled custom radio</label>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Mês</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Data do vencimento</th>
+                <th scope="col">Situação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <th scope="row">Abril</th>
+                <td>R$ 1300,00</td>
+                <td>02/10/2018</td>
+                <td>Quitado</td>
+              </tr>
+              <tr class="">
+                <th scope="row">Abril</th>
+                <td>R$ 1300,00</td>
+                <td>02/10/2018</td>
+                <td>Quitado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="form-row text-center">
+          <div class="col-12 m-3">
+            <button type="button" routerLink="/client/home" class="btn btn-primary text-center">
+              <i class="fas fa-plus"></i>
+              Selecionar
+            </button>
+          </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <legend>Nos sugira um novo plano</legend>
+        <div class="row align-items-center">
+            <div class="col">
+              <div class="form-group">
+                <label class="">Nome</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o nome do serviço">
+              </div>
+        
+              <div class="form-group">
+                <label class="">Período</label>
+                <select class="custom-select">
+                  <option selected="">Selecione um período</option>
+                  <option value="1">Mensal</option>
+                  <option value="2">Semestral</option>
+                  <option value="3">Anual</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleTextarea">Descrição da sala</label>
+                <textarea class="form-control" id="exampleTextarea" rows="6"></textarea>
+              </div>
+            </div>
+          </div>
+        
+        
+          <div class="row align-items-center">
+            <div class="col align-items-center">
+              <label class="">Itens de Consumo</label>
+        
+              <div class="row align-items-center">
+                <div class="col-10">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Quantidade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-active">
+                        <th scope="row">
+                          <select class="custom-select">
+                            <option selected="">Selecione</option>
+                            <option value="1">Água (500mL)</option>
+                            <option value="2">Café (200mL)</option>
+                          </select>
+                        </th>
+                        <td><input type="text" class="form-control" placeholder="Preço" id="inputDefault"></td>
+                        <td><input type="number" class="form-control" placeholder="Quantidade" id="inputDefault"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Default</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+        
+                <div class="col">
+                  <i class="fas fa-plus-circle" style="font-size: 40px"></i>
+                  <!--Ícone de Mais-->
+                </div>
+              </div>
+        
+        
+            </div>
+        
+            <div class="col align-items-center">
+              <label class="">Itens de Consumo</label>
+        
+              <div class="row align-items-center">
+                  <div class="col-10">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Nome</th>
+                          <th scope="col">Preço</th>
+                          <th scope="col">Tipo</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-active">
+                          <th scope="row">
+                            <select class="custom-select">
+                              <option selected="">Selecione</option>
+                              <option value="1">Água (500mL)</option>
+                              <option value="2">Café (200mL)</option>
+                            </select>
+                          </th>
+                          <td><input type="text" class="form-control" placeholder="Preço" id="inputDefault"></td>
+                          <td><input type="number" class="form-control" placeholder="Quantidade" id="inputDefault"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Default</th>
+                          <td>Column content</td>
+                          <td>Column content</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+          
+                  <div class="col">
+                    <i class="fas fa-plus-circle" style="font-size: 40px"></i>
+                    <!--Ícone de Mais-->
+                  </div>
+                </div>
+        
+            </div>
+          </div>
+        
+        
+          <div class="form-row text-center">
+            <div class="col-12 m-3">
+              <button type="button" routerLink="/client/home" class="btn btn-primary text-center">
+                <i class="fas fa-plus"></i>
+                Sugerir
+              </button>
+            </div>
+          </div>
+        
+    </div>
+  </div>
+</div>

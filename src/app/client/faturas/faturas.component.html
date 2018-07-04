@@ -1,0 +1,77 @@
+<app-nav-bar-client></app-nav-bar-client>
+
+<div class="mx-auto container py-4">
+  <h2 class="display-5 text-center">Fatura</h2>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-10 align-self-center">
+      <div class="row justify-content-center align-items-center">
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Valor total</h5>
+            <p class="card-text">
+              R$ 100,00
+            </p>
+            <p class="card-text">
+              Pagamento mínimo: R$ 20,00
+            </p>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Data de vencimento</h5>
+            <p class="card-text">
+              22/02/2019
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Itens</th>
+              <th scope="col">Preço</th>
+              <th scope="col">Data do pedido</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="">
+              <th scope="row">Plano básico</th>
+              <td>R$ 300,00</td>
+              <td>02/12/2018</td>
+            </tr>
+            <tr>
+              <th scope="row">Plano básico</th>
+              <td>R$ 300,00</td>
+              <td>02/12/2018</td>
+            </tr>
+            <tr>
+              <th scope="row">Plano básico</th>
+              <td>R$ 300,00</td>
+              <td>02/12/2018</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col align-self-center ml-auto">
+      <p class="">
+        Ir para:
+      </p>
+      <div class="list-group">
+        <a routerLink="passadas" class="list-group-item list-group-item-action">
+          Faturas anteriores
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          Imprimir fatura
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          Pagar fatura
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
