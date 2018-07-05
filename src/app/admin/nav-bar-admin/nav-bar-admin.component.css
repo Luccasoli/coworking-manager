@@ -1,0 +1,19 @@
+.fontBrand {
+	font-family: 'Comfortaa', cursive;
+}
+
+.brandColor {
+	color: red;
+}
+
+.grandienteNav {
+	opacity: 0.95;
+}
+
+.hrSeparator {
+	border: 10;
+}
+
+.sizeImFooter {
+	font-size: 40px;
+}

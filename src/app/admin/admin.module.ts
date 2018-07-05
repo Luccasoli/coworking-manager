@@ -15,12 +15,14 @@ import { MenuSalasComponent } from './menu-salas/menu-salas.component';
 import { ListarItensDeConsumoComponent } from './listar-itens-de-consumo/listar-itens-de-consumo.component';
 import { ListarItensDeServicoComponent } from './listar-itens-de-servico/listar-itens-de-servico.component';
 import { NavBarAdminComponent } from './nav-bar-admin/nav-bar-admin.component';
+import { FooterAdminComponent } from './footer-admin/footer-admin.component';
 
 @NgModule({
   imports: [
     CommonModule,
     AdminRoutingModule
   ],
-  declarations: [CadastrarAdministradorComponent, CadastrarItensDeConsumoComponent, CadastrarItensDeServicoComponent, CadastrarPlanoComponent, CadastrarSalaDeReuniaoComponent, CadastrarSalaDeTreinamentoComponent, CadastrarSalaExclusivaComponent, MenuCadastroComponent, MenuInfoComponent, MenuSalasComponent, ListarItensDeConsumoComponent, ListarItensDeServicoComponent, NavBarAdminComponent]
+  // tslint:disable-next-line:max-line-length
+  declarations: [CadastrarAdministradorComponent, CadastrarItensDeConsumoComponent, CadastrarItensDeServicoComponent, CadastrarPlanoComponent, CadastrarSalaDeReuniaoComponent, CadastrarSalaDeTreinamentoComponent, CadastrarSalaExclusivaComponent, MenuCadastroComponent, MenuInfoComponent, MenuSalasComponent, ListarItensDeConsumoComponent, ListarItensDeServicoComponent, NavBarAdminComponent, FooterAdminComponent]
 })
 export class AdminModule { }
