@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+.fontBrand {
+	font-family: 'Comfortaa', cursive;
+}
+
+.brandColor {
+	color: red;
+}
+
+.grandienteNav {
+	opacity: 0.95;
+}
+
+.hrSeparator {
+	border: 10;
+}
+
+.sizeImFooter {
+	font-size: 30px;
+}

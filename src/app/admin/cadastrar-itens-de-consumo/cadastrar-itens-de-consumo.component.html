@@ -1,32 +1,90 @@
 <app-nav-bar-admin></app-nav-bar-admin>
 
-<div class="mx-auto container py-4">
-  <h2 class="display-5 text-center">Cadastro de Itens de Consumo</h2>
+
+<div class="container container-fluid mb-4">
+
+  <div class="row">
+
+    <div class="col-12">
+
+      <h1 class="display-4 font-weight-bold text-center">
+        <i class="fas fa-shopping-cart text-primary"></i>
+        Itens de Consumo
+      </h1>
+
+    </div>
+
+  </div>
+
 </div>
 
-<div class="container py-4 col-6">
-  <div class="form-group">
-    <label class="">Nome</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o nome do item">
-  </div>
-  <div class="form-group">
-    <label class="">Preço</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o valor de custo do item">
-  </div>
-  <div class="form-row text-center justify-content-center">
-    <div class="col">
-      <button type="button" routerLink="/home/cadastrar-itens-de-consumo/listar-itens-de-consumo" class="btn btn-primary text-center">
-        <i class="far fa-list-alt"></i>
-        Itens cadastrados
-      </button>
-    </div>
-    <div class="col">
-      <button type="button" routerLink="/home" class="btn btn-primary text-center">
-        <i class="fas fa-plus"></i>
-        Cadastrar item
-      </button>
-    </div>
-  </div>
+<!-- Formulário -->
+
+<dir class="container container-fluid fontBrand">
+
+  <dir class="row justify-content-center mb-5">
+
+    <dir class="col-6 my-auto mt-3">
+
+      <h1 class="display-5 font-weight-bold mb-0 text-center">Cadastrar</h1>
+
+    </dir>
+
+    <dir class="col-6">
+
+      <form>
+
+        <dir class="form-row mt-5">
+
+          <div class="form-group col-12">
+            <label for="inputNome">Nome</label>
+            <input type="text" id="inputNome" class="form-control" placeholder="Nome do Item">
+          </div>
+
+        </dir>
+
+        <dir class="form-row mt-3">
+
+          <div class="form-group col-12">
+            <label for="inputNome">Preço</label>
+            <input type="number" step="0.01" id="inputPreco" class="form-control" placeholder="Preço do Item (R$)" min="0">
+          </div>
+
+        </dir>
+
+        <div class="form-row mt-5 ml-5">
+
+          <div class="col-6">
+
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-save"></i>
+              Cadastrar
+            </button>
+
+          </div>
+
+          <div class="col-6">
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#itensConsumoModal">
+              <i class="fas fa-clipboard-list"></i>
+              Listar Itens
+            </button>
+
+          </div>
+
+        </div>
+
+      </form>
+
+    </dir>
+
+  </dir>
+
+</dir>
+
+<div>
+  <hr style="opacity: 0" class="mt-5">
 </div>
+
 
 <app-footer-admin></app-footer-admin>
