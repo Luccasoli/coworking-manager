@@ -2,7 +2,7 @@
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active show" data-toggle="tab" href="#Agendamentos" [routerLink]="[{ outlets: { clientScreen: ['agendamentos'] } }]" routerLinkActive="active">Agendamentos</a>
+    <a class="nav-link active show" data-toggle="tab" href="#Agendamentos">Agendamentos</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" data-toggle="tab" href="#Materiais-de-consumo" routerLinkActive="active">Materiais de consumo</a>
@@ -16,6 +16,7 @@
 </ul>
 <div id="myTabContent" class="tab-content">
   <div class="tab-pane fade active show" id="Agendamentos">
+    <a [routerLink]="[{ outlets: { clientScreen: ['agendamentos'] } }]" >aasdsdfsdf</a>
       <router-outlet  name="clientScreen"></router-outlet>
     <!--<app-agendamentos></app-agendamentos>-->
   </div>
