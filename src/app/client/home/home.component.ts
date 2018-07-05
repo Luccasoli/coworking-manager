@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  openAgendamentos() {
+    this.router.navigateByUrl('/client/home/(A:agendamentos)');
+  }
+
+  openMatConsumo() {
+    this.router.navigateByUrl('/client/home/(B:materiais-de-consumo)');
+  }
+
+  openItensServico() {
+    this.router.navigateByUrl('/client/home/(C:itens-de-servico)');
+  }
+
+  openChat() {
+    this.router.navigateByUrl('/client/home/(D:contato-via-chat)');
   }
 
 }
