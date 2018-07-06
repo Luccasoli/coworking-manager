@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-agendamentos',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgendamentosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  openNovoAgendamento() {
+    this.router.navigateByUrl('/client/home/(A:novo-agendamento)');
   }
 
 }

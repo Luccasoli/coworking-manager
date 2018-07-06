@@ -13,12 +13,19 @@ import { MateriaisDeConsumoComponent } from './materiais-de-consumo/materiais-de
 import { ItensDeServicoComponent } from './itens-de-servico/itens-de-servico.component';
 import { ContatoViaChatComponent } from './contato-via-chat/contato-via-chat.component';
 import { NovoAgendamentoComponent } from './novo-agendamento/novo-agendamento.component';
+import { FooterClientComponent } from './footer-client/footer-client.component';
+import { HistoricoAgendamentoComponent } from './historico-agendamento/historico-agendamento.component';
+import { NovoAgendamentoReuniaoComponent } from './novo-agendamento-reuniao/novo-agendamento-reuniao.component';
+import { NovoAgendamentoExclusivaComponent } from './novo-agendamento-exclusiva/novo-agendamento-exclusiva.component';
+import { NovoAgendamentoTreinamentoComponent } from './novo-agendamento-treinamento/novo-agendamento-treinamento.component';
+import { NovoMateriaisDeConsumoComponent } from './novo-materiais-de-consumo/novo-materiais-de-consumo.component';
+import { HistoricoMateriaisDeConsumoComponent } from './historico-materiais-de-consumo/historico-materiais-de-consumo.component';
 
 @NgModule({
   imports: [
     CommonModule,
     ClientRoutingModule
   ],
-  declarations: [NavBarClientComponent, HomeComponent, AgendamentosComponent, FaturasComponent, PlanosComponent, MeusDadosComponent, FaturasPassadasComponent, MateriaisDeConsumoComponent, ItensDeServicoComponent, ContatoViaChatComponent, NovoAgendamentoComponent]
+  declarations: [NavBarClientComponent, HomeComponent, AgendamentosComponent, FaturasComponent, PlanosComponent, MeusDadosComponent, FaturasPassadasComponent, MateriaisDeConsumoComponent, ItensDeServicoComponent, ContatoViaChatComponent, NovoAgendamentoComponent, FooterClientComponent, HistoricoAgendamentoComponent, NovoAgendamentoReuniaoComponent, NovoAgendamentoExclusivaComponent, NovoAgendamentoTreinamentoComponent, NovoMateriaisDeConsumoComponent, HistoricoMateriaisDeConsumoComponent]
 })
 export class ClientModule { }

@@ -1,3 +1,50 @@
-<p>
-  materiais-de-consumo works!
-</p>
+<div class="row justify-content-center align-items-center">
+  <div class="col align-self-center ml-auto">
+    <div class="row align-items-center justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <a [routerLink]="['/client/home', {outlets: { 'B': ['novo-materiais-de-consumo']}}]" routerLinkActive="active">
+          <div class="card-body">
+            <h5 class="card-title">Adquirir consumível</h5>
+            <p class="card-text">
+              Realize a compra de um consumível
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      <a [routerLink]="['/client/home', {outlets: { 'B': ['historico-materiais-de-consumo']}}]" routerLinkActive="active">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Histórico de consumíveis utilizados</h5>
+            <p class="card-text">
+              Visualize seus aquisições passadas
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col align-self-center ml-auto">
+    <div class="card" style="width: 18rem; height: 25rem">
+      <div class="card-body">
+        <h5 class="card-title">Meus consumíveis</h5>
+        <ul class="list-group ">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Água (500mL)
+            <span class="badge badge-primary badge-pill">2</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Xícara de café (200mL)
+            <span class="badge badge-primary badge-pill">4</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Refrigerante (1L)
+            <span class="badge badge-primary badge-pill">1</span>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
